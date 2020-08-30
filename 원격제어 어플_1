@@ -1,0 +1,35 @@
+package com.example.myhouseremote;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Intent intent = new Intent(this, SubActivity.class);
+// 생성자의 첫번째 인자 : 액티비티 자기 자신 = this
+// (액티비티 안의 이너/익명 클래스 속에서는 인텐트를 생성할 때 this 대신 MianActivity.this를 사용)
+
+    }
+}
+<TextView
+    android:id="@+id/textViewAutoSize"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/white"
+            android:text="내 집 평면도"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="20sp"
+            app:autoSizeMaxTextSize="50dp"/>
+// 첫 페이지 "내 집 평면도" 글씨 설정
+
+<Button
+        android:"@+id/activity_main2
